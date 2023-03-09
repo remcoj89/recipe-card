@@ -1,4 +1,9 @@
-#btn-next {
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.button #btn-next {
   margin: 2rem 0;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -6,15 +11,22 @@
   font-weight: bold;
   background-color: cadetblue;
 }
-#btn-next:hover {
+.button #btn-next:hover {
+  background-color: rgb(63, 105, 106);
+}
+.button #btn-original {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(123, 160, 95);
+}
+.button #btn-original:hover {
   background-color: rgb(63, 105, 106);
 }
 
 @media only screen and (max-width: 810px) {
-  .button {
-    display: flex;
-    justify-content: center;
-  }
   #btn-next {
     width: 50vw;
   }

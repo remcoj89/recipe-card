@@ -1,3 +1,8 @@
+.button {
+  display: flex;
+  justify-content: space-evenly
+}
+
 #btn-next {
   margin: 2rem 0;
   padding: 1rem 2rem;
@@ -10,14 +15,21 @@
   background-color: rgb(63, 105, 106);
 }
 
+#btn-original {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  background-color: cadetblue;
+}
+#btn-original:hover {
+  background-color: rgb(63, 105, 106);
+}
+
 @media only screen and (max-width: 810px) {
-  .button {
-    display: flex;
-    justify-content: center;
-  }
-  #btn-next {
-    width: 50vw;
-  }
+
+
 }
 .card {
   background-color: #738c73;
@@ -98,7 +110,7 @@
     flex-direction: column;
   }
   .info-card .ingredients-card {
-    width: 90vw;
+    width: 70vw;
   }
   .info-card .video-card {
     width: 90vw;
@@ -106,10 +118,15 @@
     height: 30vh;
   }
   .description-card {
-    width: 90vw;
+    width: 70vw;
   }
-  #btn-next {
-    width: 90vw;
+
+  .button{
+    flex-direction: column;
+    align-items: center;
+  }
+  #btn-next, #btn-original{
+    width: 70vw;
   }
 }
 h1, h2, h3, h4, h5, h6, p, li {
