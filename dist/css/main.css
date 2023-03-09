@@ -95,7 +95,7 @@
     flex-direction: column;
   }
   .info-card .ingredients-card {
-    width: 90vw;
+    width: 80vw;
   }
   .info-card .video-card {
     width: 90vw;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 h2 {

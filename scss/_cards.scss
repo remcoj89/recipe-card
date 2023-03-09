@@ -10,7 +10,7 @@
 .main-card {
     margin-top: 2rem;
     #recipe-image {
-        width: 100%;    
+        width: 100%;
     }
     .title-card{
         margin: 0 2rem;
@@ -25,7 +25,7 @@
     justify-content: space-between;
     margin-top: 2rem;
     min-height: 40vh;
-  
+
     .ingredients-card{
         background-color: #738c73;
         width: 40%;
@@ -88,16 +88,18 @@
     .info-card{
         flex-direction: column;
         .ingredients-card{
-            width: 90vw;
+            width: 80vw;
         }
         .video-card{
-            width: 90vw;
-            height: 90vh;
-            margin-top: 2rem;
-        }
+          width: 90vw;
+          height: 90vh;
+          margin-top: 2rem;
+      }
     }
+
     .description-card{
         margin: 0 2rem;
+        // width: 90vw;
     }
     #btn-next{
         width: 90vw;
