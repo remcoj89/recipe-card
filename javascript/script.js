@@ -57,7 +57,8 @@ async function getRecipes() {
 
 // Get a new Recipe
 newRecipeBtn.addEventListener('click', function(){
-  getRecipes();
+  window.scrollTo(0,0);
+  window.location.reload()
 })
 //  On load
 getRecipes();
