@@ -1,34 +1,70 @@
 .button {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .button #btn-next {
   margin: 2rem 0;
   padding: 1rem 2rem;
-  border-radius: 50px;
+  border-radius: 3rem;
   color: white;
   font-weight: bold;
-  background-color: cadetblue;
+  box-shadow: 0 0 20px #eee;
+  background-image: linear-gradient(to right, #134E5E 0%, #71B280 51%, #134E5E 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  display: block;
+  width: 20vw;
 }
 .button #btn-next:hover {
-  background-color: rgb(63, 105, 106);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 .button #btn-original {
   margin: 2rem 0;
   padding: 1rem 2rem;
-  border-radius: 50px;
   color: white;
+  box-shadow: 0 0 20px #eee;
+  background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   font-weight: bold;
-  background-color: rgb(123, 160, 95);
+  width: 20vw;
+  border-radius: 3rem;
+  display: block;
 }
 .button #btn-original:hover {
-  background-color: rgb(63, 105, 106);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 810px) {
-  #btn-next {
-    width: 50vw;
+  .button {
+    justify-content: space-evenly;
+  }
+  .button #btn-next {
+    width: 40vw;
+  }
+  .button #btn-original {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button #btn-next {
+    width: 80vw;
+  }
+  .button #btn-original {
+    width: 80vw;
   }
 }
 .card {
@@ -123,11 +159,20 @@
   }
   .description-card {
     margin: 0 2rem;
-  }
-  #btn-next {
     width: 90vw;
   }
 }
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #dadada;
+  background-image: linear-gradient(0deg, #dadada 0%, #eefaff 100%);
+}
+
 h1, h2, h3, h4, h5, h6, p, li {
   color: #F8F9F9;
   margin: 0;
