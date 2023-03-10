@@ -135,6 +135,12 @@ p, li {
   font-size: 1rem;
 }
 
+.section-hidden {
+  background-color: aquamarine;
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 h2 {
   margin: 0;
   padding: 0;

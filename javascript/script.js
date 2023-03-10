@@ -9,10 +9,6 @@ const originalRecipeBtn = document.getElementById('link-to-original-recipe')
 let apiRecipes = []
 let mealsArray = []
 
-// Revailing Elements on Scroll
-// const observer = new IntersectionObserver()
-
-
 // Update the DOM
 function updateDOM() {
   // main Card Container
@@ -23,9 +19,28 @@ function updateDOM() {
     recipeVideo.src = `${result.strYoutube}`;
     recipeDescription.textContent = result.strInstructions;
     originalRecipeBtn.href = `${result.strSource}`;
-
   });
 }
+
+// Revailing Elements on Scroll
+const allSections = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section-hidden')
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver (revealSection, {
+  root: null,
+  treshold: 0.15,
+});
+
+allSections.forEach(function(section){
+  sectionObserver.observe(section);
+  section.classList.add('section-hidden')
+});
 
 // Get Recipes from API
 async function getRecipes() {
@@ -35,8 +50,6 @@ async function getRecipes() {
     apiRecipes = await response.json();
     mealsArray = apiRecipes.meals
     updateDOM(mealsArray);
-    // createList(mealsArray);
-    console.log(mealsArray)
   } catch (error) {
     alert(error)
   }

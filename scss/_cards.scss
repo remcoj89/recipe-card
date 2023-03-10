@@ -6,11 +6,17 @@
     overflow: hidden;
 }
 
+.card-blur{
+  opacity: 25%;
+  color: #738c73;
+}
+
 // Card with recipe img and description
 .main-card {
     margin-top: 2rem;
     #recipe-image {
         width: 100%;
+        object-fit: cover;
     }
     .title-card{
         margin: 0 2rem;
