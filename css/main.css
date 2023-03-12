@@ -135,14 +135,15 @@
     padding: 0;
   }
   .info-card {
-    margin: 2rem;
+    margin: 1rem;
     min-height: 20vh;
   }
   .description-card {
     min-height: 20vh;
+    width: 90vw;
     padding: 0;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 1rem;
+    padding: 1rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -150,16 +151,20 @@
     flex-direction: column;
   }
   .info-card .ingredients-card {
-    width: 80vw;
+    width: 90%;
+    padding: 1rem;
   }
   .info-card .video-card {
     width: 90vw;
-    height: 90vh;
+    height: 40vh;
     margin-top: 2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .description-card {
     margin: 0 2rem;
-    width: 90vw;
+    min-width: 0;
+    max-width: 90%;
   }
 }
 html {

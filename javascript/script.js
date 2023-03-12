@@ -16,7 +16,7 @@ function updateDOM() {
     recipeImage.src = `${result.strMealThumb}`;
     recipeName.textContent = result.strMeal;
     recipeCategory.textContent = result.strCategory;
-    recipeVideo.src = `${result.strYoutube}`;
+    // recipeVideo.src = `${result.strYoutube}`;
     recipeDescription.textContent = result.strInstructions;
     originalRecipeBtn.href = `${result.strSource}`;
   });
