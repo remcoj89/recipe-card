@@ -1,0 +1,22 @@
+{
+  "name": "recipe-card",
+  "version": "1.0.0",
+  "description": "recipe card with api",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcoj89/recipe-card.git"
+  },
+  "author": "Remco Jonk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remcoj89/recipe-card/issues"
+  },
+  "homepage": "https://github.com/remcoj89/recipe-card#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

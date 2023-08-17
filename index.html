@@ -3,60 +3,46 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipes card</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <title>Delicious recipes</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <!-- main Container -->
-  <div class="container">
 
-    <!-- Recipe image and recipe name + catagorie -->
-    <div class="section card main-card">
-      <img id="recipe-image" src="" alt="Recipe image" style=" height: 70vh;">
-      <div class="title-card">
-        <h2 id="recipe-name"></h2>
-        <!-- <br> -->
-        <p id="category"></p>
-      </div>
-    </div>
-
-    <!-- Ingriedients and instruction video -->
-    <div class="section row info-card">
-
-      <div class="card ingredients-card">
-        <h2>ingrediënts</h2>
-        <ul>
-          <li>500gr kip</li>
-          <li>2 rode paprika</li>
-          <li>2 tenen knoflook</li>
-          <li>350gr witte rijst</li>
-          <li>250 ml woksaus</li>
+  <header id="header">
+    <div class="header">
+      <img src="./images/hero-image.jpg" alt="" class="header__image" id="recipe-image">
+      <div class="header__content">
+        <h1 class="header__content--title">Delicious recipes</h1>
+        <ul class="header__content--list">
+          <li class="list__item" >Name: <span class="list__item--value" id="recipe-name"></span> </li>
+          <li class="list__item" >Category: <span class="list__item--value" id="recipe-category"></span></spanq></li>
+          <li class="list__item" >Origin: <span class="list__item--value" id="recipe-origin"></span></li>
         </ul>
       </div>
+    </div>
+  </header>
 
-
-      <div class="card video-card">
-        <iframe width="866" height="487" src="https://www.youtube.com/embed/MPo-7KPhRa4" title="How To Make Beef Rendang - Indonesia’s No. 1 Beef Curry | Naz It Up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <!-- <iframe id="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="YouTube video player"></iframe> -->
+  <section class="recipe">
+    <div class="recipe__description">
+      <div>
+        <h2>ingredients</h2>
+        <ul id="recipe-ingredient-list"></ul>
       </div>
+      <a href="" class="button-primary">New Recipe</a>
     </div>
+    <div class="recipe__ingredients">
+      <div>
+        <h2>Description</h2>
+        <p id="recipe-instructions"></p>
+      </div>
+      <a href=""  target="_blank" class="button-primary" id="recipe-instructions--video">Description Video</a>
+    </div>
+  </section>
 
-    <!-- Recipe description -->
-    <div class="section card description-card">
-      <h2>Description</h2>
-      <p id="recipe-description"></p>
-    </div>
-
-    <!-- Button to load next recipe -->
-    <div class="section button">
-      <button id="btn-next">New Recipe</button>
-      <a href="" id="link-to-original-recipe" target="_blank"><button id="btn-original">Original Recipe</button></a>
-    </div>
-  </div>
-  <script src="javascript/script.js"></script>
+  <script src="./javascript/script.js"></script>
 </body>
 
 </html>

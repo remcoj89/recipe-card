@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import '../abstracts/variables';
+
+// Font families
+$font-family-hero: 'Cormorant Garamond', serif;
+$font-family-primary: 'Open Sans', sans-serif;
+
+// Font size
+$hero-font-size: 6.4rem;
+$heading-font-size: 3rem;
+$default-font-size: 1.6rem;
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-decoration: none;
+  color: $font-color-primary;
+  font-family: $font-family-primary;
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,125 @@
+/* Colors */
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5; }
+  @media (min-width: 675px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+/* Colors */
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-decoration: none;
+  color: #f9f9f9;
+  font-family: "Open Sans", sans-serif; }
+  body a {
+    text-decoration: none; }
+
+#header {
+  height: 90vh;
+  background: linear-gradient(to left, rgba(31, 64, 55, 0.7), rgba(153, 242, 200, 0.9)), url("../../images/hero-image.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
+
+.header {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+  padding: 3.2rem;
+  justify-content: space-around;
+  align-content: center;
+  box-shadow: 1px, 1px, 3px, rgba(0, 0, 0, 0.5);
+  max-width: 1440px; }
+  .header__image {
+    width: 40%;
+    background: #d9d9d9; }
+  .header__content {
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.6); }
+    .header__content--title {
+      font-size: 6.4rem;
+      color: #f9f9f9;
+      margin-top: 15%; }
+    .header__content .list__item {
+      list-style: none;
+      font-weight: 600;
+      color: #f9f9f9;
+      text-align: left;
+      font-size: 2.4rem;
+      width: 70%;
+      margin: 0 auto; }
+      .header__content .list__item--value {
+        font-weight: 400; }
+
+.recipe {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  margin: 3.2rem auto;
+  padding: 3.2rem;
+  justify-content: space-between;
+  min-height: 50vh; }
+  .recipe h2 {
+    font-size: 4.8rem;
+    color: #f9f9f9; }
+  .recipe__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #273c76;
+    height: 100%;
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    background-image: url("../../images/perkament.jpg");
+    background-position: center;
+    padding: 3.6rem; }
+  .recipe__ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #273c76;
+    height: 100%;
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    background-image: url("../../images/perkament.jpg");
+    background-position: center;
+    padding: 3.6rem; }
+
+.button-primary {
+  margin: 1.6rem auto;
+  width: 30rem;
+  padding: 1.6rem 0;
+  background-color: orangered;
+  border: none;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .2s; }
+  .button-primary:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .button-primary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+#recipe-instructions--video {
+  display: none; }
